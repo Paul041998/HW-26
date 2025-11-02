@@ -1,0 +1,153 @@
+body {
+  background: #F7F1DE;
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  color: #333;
+}
+
+.app { 
+  max-width: 600px;
+  margin: 40px auto;
+  background: #A8BBA3;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  transition: 0.3s;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 25px;
+}
+
+header button {
+  border: none;
+  background: #C4A484;
+  color: #fff;
+  font-weight: 600;
+  padding: 10px 22px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+header button:hover {
+  background: #B87C4C;
+  transform: translateY(-2px);
+}
+
+header button.active {
+  background: #B87C4C;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.contact-list h2,
+.add-form h2 {
+  text-align: center;
+  color: #333;
+}
+
+.empty {
+  text-align: center;
+  color: #666;
+  font-style: italic;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-card {
+  background: #F7F1DE;
+  border-left: 6px solid #B87C4C;
+  border-radius: 12px;
+  padding: 12px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+}
+
+.contact-card:hover {
+  transform: scale(1.02);
+}
+
+.contact-card h3 {
+  margin: 0;
+  color: #3b3b3b;
+}
+
+.contact-card p {
+  margin: 0;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.delete-btn {
+  background: #B87C4C;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 6px 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.delete-btn:hover {
+  background: #9c6238;
+}
+
+.add-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.add-form input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #C4A484;
+  background: #F7F1DE;
+  color: #333;
+  font-size: 1rem;
+}
+
+.add-form input:focus {
+  outline: 2px solid #B87C4C;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttons button {
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: 600;
+}
+
+.buttons .save {
+  background: #B87C4C;
+  color: white;
+}
+
+.buttons .save:hover {
+  background: #9c6238;
+}
+
+.buttons .cancel {
+  background: #ddd;
+  color: #333;
+}
+
+.buttons .cancel:hover {
+  background: #ccc;
+}
